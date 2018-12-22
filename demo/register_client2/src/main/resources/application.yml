@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+eureka:
+  instance:
+    hostname: peer2
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: 这是一个测试的元数据
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8080/eureka/
+
+spring:
+  application:
+    name: eureka-server2

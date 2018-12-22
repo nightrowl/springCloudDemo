@@ -51,6 +51,8 @@
 
     <modules>
         <module>register_center</module>
+        <module>register_center2</module>
+        <module>fegindemo</module>
 
     </modules>
 
