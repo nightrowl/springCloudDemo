@@ -3,11 +3,14 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8080/eureka/
 server:
-  port: 8083
+  port: 8087
 spring:
   application:
-    name: service-feign
+    name: service-feignConfig
 
 feign:
   hystrix:
     enabled: true
+logging:
+  level:
+    com.michal.service.TestFeign: DEBUG

@@ -3,11 +3,14 @@ server:
 
 eureka:
   instance:
-    hostname: peer1
+    hostname: localhost
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer2:8090/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 spring:
   application:
-    name: eureka-server1
+    name: eurka-server
+    

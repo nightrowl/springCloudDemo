@@ -9,8 +9,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8080/eureka/
-  instance:
-    prefer-ip-address: true
 feign:
   hystrix:
     enabled: true
